@@ -28,7 +28,6 @@ a {
   padding: 100px 20px;
   position: relative;
   overflow: hidden;
-  min-width: 400px;
 }
 
 .hero::before {
