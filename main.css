@@ -5,6 +5,7 @@ body {
   padding: 0;
   color: #333;
   max-width: 1440px;
+  min-width: 600px;
   margin: 10px auto;
 }
 
@@ -27,7 +28,6 @@ a {
   padding: 100px 20px;
   position: relative;
   overflow: hidden;
-  height: 100vh;
 }
 
 .hero::before {
@@ -72,9 +72,13 @@ a {
   border-radius: 5px;
   font-weight: bold;
   margin: 10px;
-  display: inline-block;
 }
 
+@media (max-width: 600px) {
+  .cta-button {
+    display: inline-block;
+  }
+}
 .cta-button.secondary {
   background-color: transparent;
   border: 2px solid #ffa500;
