@@ -27,6 +27,7 @@ a {
   padding: 100px 20px;
   position: relative;
   overflow: hidden;
+  height: 100vh;
 }
 
 .hero::before {
@@ -77,28 +78,6 @@ a {
 .cta-button.secondary {
   background-color: transparent;
   border: 2px solid #ffa500;
-}
-
-/* Quote Request Form */
-#quote-form {
-  background-color: white;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  margin: -50px auto 50px auto;
-  text-align: center;
-}
-
-#quote-form h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.trust-badge {
-  font-size: 14px;
-  color: #666;
-  margin-top: 10px;
 }
 
 /* Service Overview Section */
@@ -276,4 +255,67 @@ footer p {
 .whatsapp-button img {
   width: 30px;
   height: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 0.875rem;
+  }
+
+  #quote-form {
+    padding: 20px;
+  }
+
+  #quote-form h2 {
+    font-size: 1.75rem;
+  }
+
+  .form-container {
+    padding-top: 1200px; /* Adjust for smaller screens */
+  }
+
+  .service,
+  .benefit,
+  .testimonial {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .footer-links a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero p {
+    font-size: 0.875rem;
+  }
+
+  .cta-button {
+    padding: 8px 16px;
+    font-size: 0.75rem;
+  }
+
+  #quote-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-container {
+    padding-top: 1400px; /* Adjust for very small screens */
+  }
 }

@@ -8,7 +8,10 @@ const images = [
 let currentImageIndex = 0;
 
 function changeBackground() {
+  // Set the background image
   hero.style.backgroundImage = `url(${images[currentImageIndex]})`;
+
+  // Move to the next image
   currentImageIndex = (currentImageIndex + 1) % images.length;
 }
 
@@ -17,3 +20,9 @@ setInterval(changeBackground, 5000);
 
 // Set initial background
 changeBackground();
+
+// Adjust background on window resize
+window.addEventListener("resize", () => {
+  hero.style.backgroundSize = "cover";
+  hero.style.backgroundPosition = "center";
+});
