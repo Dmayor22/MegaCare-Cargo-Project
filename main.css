@@ -5,7 +5,7 @@ body {
   padding: 0;
   color: #333;
   max-width: 1440px;
-  min-width: 600px;
+  min-width: 400px;
   margin: 10px auto;
 }
 
@@ -28,6 +28,7 @@ a {
   padding: 100px 20px;
   position: relative;
   overflow: hidden;
+  min-width: 400px;
 }
 
 .hero::before {
@@ -55,6 +56,7 @@ a {
 }
 
 .hero h1 {
+  font-size: 2rem;
   font-size: 48px;
   margin-bottom: 20px;
 }
@@ -266,11 +268,7 @@ footer p {
 }
 
 /* Responsive Styles */
-/* @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-
+@media (max-width: 768px) {
   .hero p {
     font-size: 1rem;
   }
@@ -291,5 +289,5 @@ footer p {
     display: block;
     margin: 10px 0;
   }
-} */
+}
 
