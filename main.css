@@ -20,6 +20,11 @@ a {
   text-decoration: none;
 }
 
+.cta-button.secondary:hover {
+  background-color: #ffa500;
+  transition: ease-in 0.5s;
+}
+
 /* Desktop View */
 @media (max-width: 600px) {
   body {
@@ -33,11 +38,10 @@ a {
     background-position: center;
     color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 60px 20px 0px 20px;
     position: relative;
     overflow: hidden;
-    border: 2px solid red;
-    min-height: 70vh;
+    min-height: 60vh;
     min-width: 375px;
     max-width: 600px;
   }
@@ -56,35 +60,45 @@ a {
   .hero-content {
     position: relative;
     z-index: 2;
-
-    border: 2px solid red;
   }
 
-  .logo {
+  .logo_image {
     position: absolute;
+    border: 2px solid green;
     top: 10px;
     left: 10px;
     max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
     z-index: 3;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    border-radius: 50%;
+    max-width: 40px;
+    max-height: 40px;
   }
 
   .hero h1 {
     font-size: 2rem;
     margin: 20px;
+    opacity: 90%;
   }
 
   .hero p {
-    font-size: 2rem;
+    font-size: 1rem;
     margin: 0 auto 20px auto;
     max-width: 70%;
+    font-weight: 600;
   }
 
   .cta-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    margin: 0 auto;
   }
 
   .cta-button {
@@ -95,52 +109,59 @@ a {
     border-radius: 5px;
     font-weight: bold;
     margin: 10px;
-    display: inline-block;
   }
 
   .cta-button.secondary {
     background-color: transparent;
     border: 2px solid #ffa500;
   }
-}
 
-/* Service Overview Section */
-#services {
-  background-color: white;
-  padding: 60px 20px;
-  text-align: center;
-}
+  /* Service Overview Section */
+  #services {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 20px 0;
+  }
 
-#services h2 {
-  font-size: 32px;
-  margin-bottom: 40px;
-}
+  #services h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
 
-.services-grid {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
+  .services-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 
-.service {
-  max-width: 300px;
-}
+    border: 2px solid red;
+    
+  }
 
-.service img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 20px;
-}
+  .service {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
 
-.service h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
+  .service img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
 
-.service p {
-  font-size: 16px;
-  color: #666;
+  .service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .service p {
+    font-size: 16px;
+    color: #666;
+  }
 }
 
 /* Why Choose Us Section */
@@ -302,5 +323,15 @@ footer p {
   .footer-links a {
     display: block;
     margin: 10px 0;
+  }
+}
+
+@media (max-width: 440px) {
+  .cta-container {
+    flex-direction: column;
+  }
+
+  .hero {
+    padding: 50px 20px 20px 20px;
   }
 }
