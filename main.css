@@ -1,12 +1,13 @@
 /* Global Styles */
-body {
-  font-family: "Open Sans", sans-serif;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
   color: #333;
-  max-width: 1440px;
-  min-width: 600px;
-  margin: 10px auto;
 }
 
 h1,
@@ -19,74 +20,88 @@ a {
   text-decoration: none;
 }
 
-/* Hero Section */
-.hero {
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-  position: relative;
-  overflow: hidden;
-}
+/* Desktop View */
+@media (max-width: 600px) {
+  body {
+    max-width: 600px;
+    min-width: 375px;
+  }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
+  /* Hero Section */
+  .hero {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid red;
+    min-height: 70vh;
+    min-width: 375px;
+    max-width: 600px;
+  }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-}
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
 
-.logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  max-width: 50px;
-  z-index: 3;
-}
+  .hero-content {
+    position: relative;
+    z-index: 2;
 
-.hero h1 {
-  font-size: 2rem;
-  font-size: 48px;
-  margin-bottom: 20px;
-}
+    border: 2px solid red;
+  }
 
-.hero p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-width: 50px;
+    z-index: 3;
+  }
 
-.cta-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  margin: 0 auto;
-}
+  .hero h1 {
+    font-size: 2rem;
+    margin: 20px;
+  }
 
-.cta-button {
-  background-color: #ffa500;
-  color: white;
-  padding: 15px 30px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  margin: 10px;
-  display: inline-block;
-}
+  .hero p {
+    font-size: 2rem;
+    margin: 0 auto 20px auto;
+    max-width: 70%;
+  }
 
-.cta-button.secondary {
-  background-color: transparent;
-  border: 2px solid #ffa500;
+  .cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .cta-button {
+    background-color: #ffa500;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px;
+    display: inline-block;
+  }
+
+  .cta-button.secondary {
+    background-color: transparent;
+    border: 2px solid #ffa500;
+  }
 }
 
 /* Service Overview Section */
@@ -289,4 +304,3 @@ footer p {
     margin: 10px 0;
   }
 }
-
