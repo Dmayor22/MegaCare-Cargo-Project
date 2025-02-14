@@ -225,8 +225,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 20px;
-    flex-wrap: wrap;
   }
 
   .testimonial {
@@ -255,88 +255,62 @@ a {
   }
 
   /* Footer */
-footer {
-  background-color: #002366;
-  color: white;
-  padding: 10px;
-  text-align: center;
-}
-
-.footer-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.footer-links a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.footer-links a:hover {
-  color: #ffa500;
-}
-
-.social-icons .iconss {
-  margin: 0 10px;
-  color: #fff;
-  font-size: 24px;
-}
-
-footer p {
-  font-size: 14px;
-  margin-top: 10px;
-  line-height: 20px;
-}
-
-/* WhatsApp Button */
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366; /* WhatsApp green */
-  color: white;
-  padding: 15px;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-
-.whatsapp-button img {
-  width: 30px;
-  height: 30px;
-}
-
-}
-
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .hero p {
-    font-size: 1rem;
+  footer {
+    background-color: #002366;
+    color: white;
+    padding: 10px;
+    text-align: center;
   }
 
-  .cta-button {
-    padding: 10px 20px;
-    font-size: 0.875rem;
-  }
-
-  .service,
-  .benefit,
-  .testimonial {
-    max-width: 100%;
-    flex: 1 1 100%;
+  .footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
   }
 
   .footer-links a {
-    display: block;
-    margin: 10px 0;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  .footer-links a:hover {
+    color: #ffa500;
+  }
+
+  .social-icons .iconss {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+  }
+
+  footer p {
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 20px;
+  }
+
+  /* WhatsApp Button */
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* WhatsApp green */
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .whatsapp-button img {
+    width: 30px;
+    height: 30px;
   }
 }
 
