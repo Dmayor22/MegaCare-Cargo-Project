@@ -292,7 +292,7 @@ a {
   .footer-links a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 10px;
   }
 
   .footer-links a:hover {
@@ -572,7 +572,7 @@ a {
   .footer-links a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 10px;
   }
 
   .footer-links a:hover {
