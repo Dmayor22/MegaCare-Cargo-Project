@@ -25,6 +25,28 @@ a {
   transition: ease-in 0.5s;
 }
 
+  /* WhatsApp Button */
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* WhatsApp green */
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .whatsapp-button img {
+    width: 30px;
+    height: 30px;
+  }
+
 /* Mobile View */
 @media (max-width: 600px) {
   body {
@@ -288,28 +310,6 @@ a {
     margin-top: 10px;
     line-height: 20px;
   }
-
-  /* WhatsApp Button */
-  .whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25d366; /* WhatsApp green */
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-  }
-
-  .whatsapp-button img {
-    width: 30px;
-    height: 30px;
-  }
 }
 
 /* Mobile view for cta with screen 440px */
@@ -334,12 +334,12 @@ a {
   .hero {
     background-size: cover;
     background-position: center;
-    color: red;
+    color: white;
     text-align: center;
     padding: 60px 20px 20px 20px;
     position: relative;
     overflow: hidden;
-    min-height: 70vh;
+    min-height: 60vh;
     min-width: 600px;
     max-width: 1024px;
   }
@@ -589,28 +589,6 @@ a {
     font-size: 14px;
     margin-top: 10px;
     line-height: 20px;
-  }
-
-  /* WhatsApp Button */
-  .whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25d366; /* WhatsApp green */
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-  }
-
-  .whatsapp-button img {
-    width: 30px;
-    height: 30px;
   }
 }
 

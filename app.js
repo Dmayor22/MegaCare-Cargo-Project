@@ -1,9 +1,9 @@
 const hero = document.getElementById("hero");
 const images = [
-  "Assets/Images/Banner.jpg",
+  "Assets/Images/IMG-20250112-WA0000.jpg",
   "Assets/Images/ship.jpeg",
   "Assets/Images/truck.jpeg",
-  "Assets/Images/download.jpeg",
+  "Assets/Images/download.jpeg"
 ];
 let currentImageIndex = 0;
 
