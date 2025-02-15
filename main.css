@@ -339,7 +339,7 @@ a {
     padding: 60px 20px 20px 20px;
     position: relative;
     overflow: hidden;
-    min-height: 60vh;
+    min-height: 70vh;
     min-width: 600px;
     max-width: 1024px;
   }
@@ -436,13 +436,12 @@ a {
     align-items: center;
     gap: 30px;
     min-width: 556px;
-    max-width: 806px;
-    border: 2px solid;
+    max-width: 906px;
     margin: 0 auto;
   }
 
   .service {
-
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 5px;
@@ -457,15 +456,16 @@ a {
   }
 
   .service h3 {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 10px;
   }
 
   .service p {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #666;
     padding: 10px;
-    max-width: 400px;
+    max-width: 100%;
+    line-height: 40px;
   }
 
   /* Why Choose Us Section */
@@ -484,8 +484,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: 30px;
+    flex-wrap: wrap;
   }
 
   .benefit {
@@ -525,7 +525,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 20px;
   }
 
@@ -612,4 +612,8 @@ a {
     width: 30px;
     height: 30px;
   }
+}
+
+/* Desktop View */
+@media (min-width: 1024px) {
 }
