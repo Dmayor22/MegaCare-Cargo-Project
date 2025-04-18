@@ -840,11 +840,14 @@ footer p {
   .testimonial p {
     font-size: 16px;
     margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.3rem;
   }
 
   .testimonial span {
     font-size: 14px;
     color: #666;
+    font-weight: 600;
   }
 
   /* Counter Section */
